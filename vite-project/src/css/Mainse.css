@@ -1,0 +1,66 @@
+.mainse-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+#section {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 30px;
+    padding: 10px;
+    /* Hide scrollbar across browsers */
+  scrollbar-width: none;        
+ 
+}
+
+.cimg {
+    height: 300px;
+    width: 600px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+.cimg:hover {
+  transform: scale(1.04);
+}
+
+.para {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.alink {
+    text-decoration: none;
+}
+
+/* Scroll arrows */
+.scroll-btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-45%);
+    z-index: 1;
+    background-color: rgba(255,255,255,0.7);
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.scroll-btn:hover {
+    background-color: rgba(255,255,255,0.9);
+}
+
+.scroll-btn.left {
+    left: -40px;
+}
+
+.scroll-btn.right {
+    right: -40px;
+}

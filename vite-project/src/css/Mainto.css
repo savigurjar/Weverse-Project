@@ -1,0 +1,99 @@
+#mainsecond {
+  margin-top: 60px;
+  margin-left: 45px;
+  position: relative;
+  margin-right: 40px;
+}
+
+#headline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+#headline img {
+  height: 30px;
+  width: 30px;
+}
+#headline h2{
+  font-size: 32px;
+}
+
+#scroll-wrapp {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#box {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  width: 100%;
+}
+
+#box::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.boxes {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+}
+
+.boxes > div {
+  min-width: 100px;
+  text-align: center;
+}
+
+.dimg {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dimg:hover {
+  transform: scale(1.05);
+}
+
+.para1 {
+  color: black;
+  font-weight: bold;
+  margin-top: 6px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* Scroll buttons */
+.scroll-bt {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 24px;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-bt:hover {
+  background-color: rgba(218, 209, 209, 0.842);
+}
+
+.scroll-bt.left {
+  left: -40px;
+}
+
+.scroll-bt.right {
+  right: -40px;
+}
