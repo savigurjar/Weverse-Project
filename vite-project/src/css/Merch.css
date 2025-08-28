@@ -1,0 +1,81 @@
+.merch-container {
+  padding: 20px;
+  margin-left: 40px;
+  margin-top: 23px;
+}
+
+.merch-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: #e5e5e5;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.category-btn:hover {
+  background: #ccc;
+}
+
+.category-btn.active {
+  background: black;
+  color: white;
+}
+
+/* Grid Layout */
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.merch-card {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 10px;
+  text-align: center;
+  /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
+}
+
+/* .merch-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+} */
+
+.merch-img {
+  width: 200px;
+  height: 230px;
+  object-fit: contain;
+   transition: transform 0.5s ease-in-out, box-shadow 0.2s ease;
+}
+.merch-img:hover{
+    transform: scale(1.06);
+}
+
+.merch-name {
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+
+.merch-price {
+  color: #555;
+  font-size: 14px;
+  margin-top: 5px;
+}

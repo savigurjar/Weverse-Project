@@ -1,0 +1,78 @@
+.hh {
+    margin-top: 60px;
+    margin-left: 70px;
+    font-size: 30px;
+}
+
+#mainthr {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    background: #F7F7FA;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.til {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 15px;
+    /* width: 400px; */
+
+}
+
+
+
+.chimg {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in;
+}
+
+.chimg:hover {
+    transform: scale(1.05);
+    /* zoom effect */
+
+}
+
+/* wrapper to center logo */
+.logo-wra {
+    margin-top: -25px;
+    /* pulls logo upward slightly */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    /* keeps logo above the card image */
+}
+
+/* circular logo */
+.logo {
+    width: 60px;
+    /* slightly bigger for clarity */
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    /* white border makes it pop */
+    object-fit: cover;
+    background: #fff;
+
+}
+
+
+
+
+.para2 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
