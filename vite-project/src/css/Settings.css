@@ -1,0 +1,56 @@
+.settings-page {
+  padding: 20px;
+  max-width: 800px;
+  max-height:400px;
+  margin: auto;
+
+}
+
+.settings-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.settings-section {
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.settings-section h3 {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+select {
+  width: 50%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px 0;
+  /* border-bottom: 1px solid #eee; */
+}
+
+
+
+.hint {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+}

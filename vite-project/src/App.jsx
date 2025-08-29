@@ -1,10 +1,11 @@
 import "./App.css";
 import Header from "./components/Header.jsx";
-import Mainse from "./components/Mainse.jsx";
-import Mainto from "./components/Mainto.jsx";
-import Mainth from "./components/Mainth.jsx";
-import Community from "./components/Community.jsx";
-import Merch from "./components/Merch.jsx"
+import All from "./All";
+import Settings from "./components/Settings.jsx";
+import User from "./components/User.jsx";
+// import Alarm from "./components/Alarm.jsx";
+// import Search from "./components/Search.jsx";
+
 import { BrowserRouter, Routes, Route } from "react-router"
 
 function App() {
@@ -12,17 +13,15 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <Community/>
-        <Merch/>
-        <Mainse />
-        <Mainto />
-        < Mainth />
-        <Routes>
-          {/* <Route path="/" element={<Mainse />} />
-          <Route path="/" element={<Mainto />} />
-          <Route path="/" element={<Mainth />} /> */}
-        </Routes>
+        <main className="page-content">
+          <Routes>
+            <Route path="/" element={<All />} />
+            <Route path="/user" element={<User />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </main>
       </BrowserRouter>
+
 
     </>
   );

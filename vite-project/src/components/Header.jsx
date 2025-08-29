@@ -1,22 +1,41 @@
-import React from "react";
- import "../css/Header.css";
-
+import { Link } from "react-router";
 import searchIcon from "../assets/search.png";
 import alarmIcon from "../assets/alarm.png";
 import settingsIcon from "../assets/settings.png";
 import userIcon from "../assets/user.png";
-
+import "../css/Header.css"
 
 function Header() {
   return (
     <div id="header">
-      <div><h1>Weverse</h1></div>
+     <div>
+        <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+          <h1>Weverse</h1>
+        </Link>
+      </div>
       <div className="dv">
         <ul>
-          <li><img src={searchIcon} alt="search" /></li>
-          <li><img src={alarmIcon} alt="alarm" /></li>
-          <li><img src={settingsIcon} alt="settings" /></li>
-          <li><img src={userIcon} alt="user" /></li>
+          <li>
+            <Link to="/search">
+              <img src={searchIcon} alt="search" />
+            </Link>
+          </li>
+          <li>
+            <Link to="/alarm">
+              <img src={alarmIcon} alt="alarm" />
+            </Link>
+          </li>
+          <li>
+            <Link to="/user">
+              <img src={userIcon} alt="user" />
+            </Link>
+          </li>
+          <li>
+            <Link to="/settings">
+              <img src={settingsIcon} alt="settings" />
+            </Link>
+          </li>
+          
         </ul>
       </div>
     </div>

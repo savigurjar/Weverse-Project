@@ -4,3 +4,13 @@
   box-sizing: border-box;
    font-family: "Poppins", sans-serif;
 }
+body {
+  margin: 0; /* remove default spacing */
+}
+
+/* App.css */
+.page-content {
+  padding-top: 12vh;  /* same as header height */
+}
+
+

@@ -1,0 +1,168 @@
+#first {
+    height: 25vh;
+    color: white;
+    background-color: #444444;
+    position: relative;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.username {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.email {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 5px 0;
+}
+
+.logout {
+    color: #00CBD5;  /* teal like Weverse */
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#hul ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#hul ul li {
+    padding: 6px 14px;
+    background: #555555;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#hul ul li:hover {
+    background: #666666;
+}
+/* Container */
+#settings-content {
+    display: flex;
+    padding: 20px 40px;
+    gap: 20px;
+    background: #f5f6f8;
+}
+
+/* Left Side */
+.left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.balance-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.charge-btn {
+    background: #00c4a7;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.option-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+/* Right Side */
+.right-panel {
+    flex: 2;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 20px 0;
+}
+
+.tabs button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 20px;
+    background: #eee;
+    cursor: pointer;
+}
+
+.tabs button:hover{
+    background: #00c4a7;
+    color: white;
+}
+
+.history-box {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    background: #fafafa;
+}
+/* Extra Links */
+.extra-links {
+    margin-top: 20px;
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.extra-card {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 17px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.extra-card:last-child {
+    border-bottom: none;
+}
+
+.extra-card img {
+    width: 24px;
+    height: 24px;
+}
+
+.extra-card:hover {
+    background: #f9f9f9;
+}
